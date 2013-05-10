@@ -18,6 +18,7 @@ function createRequestObject() {
 var idd;
 function vote(io,param,id1)
 {
+	document.location.href = "?list="+io;
 	idd = id1;
 	io = "html/"+io+".html";
 	//param = null;

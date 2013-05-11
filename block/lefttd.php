@@ -1,18 +1,11 @@
 ﻿<div class="blok">
-        	<div class="blok_zag">Направления</div>
+        	<div class="blok_zag">Консультационное направление</div>
             <div class="blok_con">
                   
-<ul id="navmenu-v">
-<li><a href="">Консультационная</a>
-	<ul>
-		<li><a href="?list=teachers" onClick="vote('teachers','','content'); return false">Преподавателям</a></li>
-		<li><a href="">Студенту</a></li>
-	</ul>
-</li>
-<li><a href="">Научная</a></li>
-<li><a href="">Учебная</a></li>
-</ul>
-            
+				<ul id="navmenu-v">
+					<li><a href="?list=teachers">Преподавателям</a></li>
+                    <li><a href="?list=teachers">Студенту</a></li>
+				</ul>
             
             </div>
             </div>

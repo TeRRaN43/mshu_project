@@ -92,9 +92,10 @@ html, body {
     position: relative;
     color: #fff;
     
-    padding: 10px 2px;
+    padding: 10px 5px;
     text-shadow: 0 1px rgba(0,0,0,.8);
 	font-weight:bold;
+	font-size:14px;
     
     background-image: -moz-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
     background-image: -webkit-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
@@ -135,4 +136,114 @@ html, body {
 	float:right;
 	width:49%;
 	margin-right:10px;
+}
+
+
+
+ul#navmenu-v,
+ul#navmenu-v li,
+ul#navmenu-v ul {
+margin: 0;
+border: 0 none;
+padding: 0;
+width: 100%; 
+list-style: none;
+}
+ul#navmenu-v:after {
+clear: both;
+display: block;
+font: 1px/0px serif;
+content: ".";
+height: 0;
+visibility: hidden;
+}
+ul#navmenu-v li {
+float: left; 
+display: block !important; 
+display: inline; 
+position: relative;
+}
+ul#navmenu-v a {
+border: 1px solid #FFF;
+border-right-color: #527337;
+border-bottom-color: #527337;
+padding: 6px 6px;
+display: block;
+background: rgba(98,177,32,1);
+color: #FFF;
+font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+text-decoration: none;
+height: auto !important;
+height: 1%; 
+text-shadow: 0 1px rgba(0,0,0,.8);
+}
+ul#navmenu-v a:hover,
+ul#navmenu-v li:hover a,
+ul#navmenu-v li.iehover a {
+padding-left:15px;
+background: rgba(98,177,32,.8);
+color: #FFF;
+}
+ul#navmenu-v li:hover li a,
+ul#navmenu-v li.iehover li a {
+background:rgba(98,177,32,1);
+color: #FFF;
+}
+ul#navmenu-v li:hover li a:hover,
+ul#navmenu-v li:hover li:hover a,
+ul#navmenu-v li.iehover li a:hover,
+ul#navmenu-v li.iehover li.iehover a {
+background:rgba(98,177,32,.8);
+font-size:13px;
+color: #FFF;
+}
+ul#navmenu-v li:hover li:hover li a,
+ul#navmenu-v li.iehover li.iehover li a {
+background:rgba(98,177,32,1);
+color: #BCD6A7;
+}
+ul#navmenu-v li:hover li:hover li a:hover,
+ul#navmenu-v li:hover li:hover li:hover a,
+ul#navmenu-v li.iehover li.iehover li a:hover,
+ul#navmenu-v li.iehover li.iehover li.iehover a {
+background:rgba(98,177,32,1);
+color: #FFF;
+}
+ul#navmenu-v li:hover li:hover li:hover li a,
+ul#navmenu-v li.iehover li.iehover li.iehover li a {
+background:rgba(98,177,32,1);
+color: #FFF;
+}
+ul#navmenu-v li:hover li:hover li:hover li a:hover,
+ul#navmenu-v li.iehover li.iehover li.iehover li a:hover {
+background:rgba(98,177,32,1);
+color: #FFF;
+}
+ul#navmenu-v ul,
+ul#navmenu-v ul ul,
+ul#navmenu-v ul ul ul {
+display: none;
+position: absolute;
+top: 0;
+left: 100%;
+z-index:4;
+}
+ul#navmenu-v li:hover ul ul,
+ul#navmenu-v li:hover ul ul ul,
+ul#navmenu-v li.iehover ul ul,
+ul#navmenu-v li.iehover ul ul ul {
+display: none;
+}
+ul#navmenu-v li:hover ul,
+ul#navmenu-v ul li:hover ul,
+ul#navmenu-v ul ul li:hover ul,
+ul#navmenu-v li.iehover ul,
+ul#navmenu-v ul li.iehover ul,
+ul#navmenu-v ul ul li.iehover ul {
+display: block;
+}
+
+.hmenu{
+}
+.hmenu_back{
 }

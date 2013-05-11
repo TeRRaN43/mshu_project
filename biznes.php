@@ -1,4 +1,5 @@
-<? if (isset($_GET['list'])) 
+<?
+if (isset($_GET['list'])) 
 {
 	if(file_exists("html/".$_GET['list'].".html"))
 	$text = file_get_contents("html/".$_GET['list'].".html");
@@ -7,18 +8,20 @@
 }
 else $text = file_get_contents("html/index.html");
 ?>
-<html>
+<html id="up">
 <head>
 <title>Classic</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="block/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="block/ajax.js"></script>
 </head>
 <body>
 
+<a href="?list=index" title="На главную">
 <div class="logo">
-<img src="img/logo.png" width="200" height="200" style=" z-index:2" />
+<img src="img/logo.png" width="150" height="150" style=" z-index:2" />
 </div>
+</a>
+
 <div class="header">
 <?php require("block/header.php");?>
 </div>
@@ -31,6 +34,7 @@ else $text = file_get_contents("html/index.html");
         <?php require("block/lefttd.php");?>
         </td>
     	<td class="center_column" valign="TOP">
+        <div class="pred_content">Инновационный Бизнес-Центр МГГУ</div>
         <div id="content"> 
  		<? echo $text;?>
         </div>
@@ -46,8 +50,6 @@ else $text = file_get_contents("html/index.html");
         </tr>
     </table>
 </div>
-
-
 
 </body>
 </html>
